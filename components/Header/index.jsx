@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { useMoralis } from 'react-moralis';
 import Avatar from '../Avatar';
+import Profile from '../../assets/profile.png';
 import ChangeUsername from '../Avatar/ChangeUsername';
 
 export default function Header () {
@@ -10,7 +11,7 @@ export default function Header () {
       <div className='grid grid-cols-5 lg:grid-cols-6 lg:items-center items-end'>
         <div className='relative h-24 w-24 mx-auto hidden lg:inline-grid'>
           <Image
-            src='https://links.papareact.com/3pi'
+            src={Profile}
             alt='Image'
             layout='fill'
             className='object-cover rounded-full'
